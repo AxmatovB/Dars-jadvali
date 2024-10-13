@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dars Jadvallari</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            height: 100vh; /* butun balandlikni egallash */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h6 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: white;
+            font-style: italic;
+        }
+        .button-container {
+            display: flex;
+            flex-wrap: wrap; /* harakatlantirish */
+            justify-content: center;
+            width: 100%; /* to'liq kenglik */
+        }
+        button {
+            margin: 10px;
+            padding: 20px; /* katta pad */
+            font-size: 18px; /* kattaroq shrift */
+            background-color: #d3d3d3; /* och kulrang */
+            border: none;
+            border-radius: 20px; /* dumaloq burchaklar */
+            font-style: italic; /* yozuv italikda */
+            cursor: pointer;
+            flex: 1 1 calc(30% - 20px); /* 3 ta knopka qatoriga */
+            max-width: 200px; /* maksimal kenglik */
+        }
+        button:hover {
+            background-color: #a9a9a9; /* hover effekti uchun quyuq kulrang */
+        }
+    </style>
+    <script>
+        function showDay(day) {
+            alert(day + " kuni dars!");
+        }
+    </script>
+</head>
+<body>
+    <h6>Dars jadvali</h6>
+    
+    <div class="button-container">
+        <button onclick="showDay('Dushanba')">Dushanba</button>
+        <button onclick="showDay('Seshanba')">Seshanba</button>
+        <button onclick="showDay('Chorshanba')">Chorshanba</button>
+        <button onclick="showDay('Payshanba')">Payshanba</button>
+        <button onclick="showDay('Juma')">Juma</button>
+        <button onclick="showDay('Shanba')">Shanba</button>
+    </div>
+
+</body>
+</html>
